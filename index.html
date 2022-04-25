@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--Barra de Navegação-->
+    <nav class="container-fluid"
+        style="padding-top: 20px; padding-bottom: 10px; position: fixed; z-index: 2; background-color: #005ca8; top: 0;"
+        id="navBar">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                <img src="img/cle.png" alt="Logo Prefeitura de Salvador" style="width: 150px; margin-top: -10px;">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-6" style="text-align: right;" id="divMenu">
+                <a href="#0" id="dropLink" style="display: none;">
+                    <img src="img/iconeDrop.png" alt="Drop" style="width: 50px; position:absolute; right: 15px;"
+                        id="imgDrop" role="button">
+                </a>
+
+                <ul id="menu" style="display: none;">
+                    <a href="#eventos">
+                        <li type="none"
+                            style="display: inline-block; padding-right: 10px;color:white; font-size: 10pt; font-weight: bold;">
+                            CENTRAL DE EVENTOS</li>
+                    </a>
+                    <a href="#licenciar">
+                        <li class="liMenu" type="none"
+                            style="display: inline-block; padding-right: 10px; color:white; font-size: 10pt; font-weight: bold;">
+                            COMO LICENCIAR</li>
+                    </a>
+                    <a href=#tituloDocumentacao>
+                        <li class="liMenu" type="none"
+                            style="display: inline-block; padding-right: 10px;color:white; font-size: 10pt; font-weight: bold;">
+                            DOCUMENTAÇÃO</li>
+                    </a>
+                    <a href="#contatos">
+                        <li class="liMenu" type="none"
+                            style="display: inline-block; padding-right: 10px;color:white; font-size: 10pt; font-weight: bold;">
+                            CONTATOS</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div style="width: 50px;">
+        <ul id="menu2"
+            style="position: fixed; right: 20px; top: 70px; border: solid 1px white; border-radius: 10px; width: 200px; display: none; background-color: #005ca8; z-index: 2;">
+            <a href="#eventos">
+                <li type="none"
+                    style="padding-right: 10px;color:white; font-size: 10pt; font-weight: bold; margin: 10px 0 10px 0;">
+                    CENTRAL DE EVENTOS</li>
+            </a>
+            <a href="#licenciar">
+                <li type="none"
+                    style="padding-right: 10px; color:white; font-size: 10pt; font-weight: bold; margin: 10px 0 10px 0;">
+                    COMO LICENCIAR</li>
+            </a>
+            <a href=#tituloDocumentacao>
+                <li type="none"
+                    style="padding-right: 10px;color:white; font-size: 10pt; font-weight: bold; margin: 10px 0 10px 0;">
+                    DOCUMENTAÇÃO</li>
+            </a>
+            <a href="#contatos">
+                <li type="none"
+                    style="padding-right: 10px;color:white; font-size: 10pt; font-weight: bold; margin: 10px 0 10px 0;">
+                    CONTATOS</li>
+            </a>
+        </ul>
+    </div>
+    <!--Página "Central de Eventos"-->
+    <div class="container-fluid" style="background-color: #005ca8; min-height: 400px;" id="eventos">
+        <div class="container">
+            <img src="img/info.png" alt="Informações" style="padding-top: 100px; width: 290px;">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <h1 style="color: white; margin-top: 50px;">
+                        Central Integrada de Licenciamento de Eventos - (CLE)
+                    </h1>
+                    <p style="color: white; padding-top: 20px; text-align: justify;">
+                        A Central Integrada de Licenciamento de Evento (CLE) é responsável por agilizar o processo de
+                        licenciamento dos eventos que acontecem em Salvador, facilitando o processo de autorização de
+                        festas para empresários e produtoras, estimulando cada vez mais a cadeia de produção do setor e
+                        atraindo turistas para os eventos festivos na capital baiana. Dessa forma, os produtores podem
+                        retirar a licença em um único local, acabando com a burocracia e a necessidade de comparecer a
+                        diversas secretarias.
+
+                        A Central é composta por todos os órgãos envolvidos no licenciamento: Secretaria Municipal de
+                        Desenvolvimento Urbano (SEDUR), Secretaria Municipal de Cultura e Turismo (SECULT), Secretaria
+                        Municipal de Inovação e Tecnologia (SECIS), Secretaria Municipal de Ordem Pública (SEMOP),
+                        LIMPURB, TRANSALVADOR, VISA (Vigilância Sanitária).
+
+                        Atualmente é realizada a autorização especial para eventos em logradouros públicos, para eventos
+                        esportivos, feiras, congressos, shows, espetáculos artísticos e eventos culturais.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <h1 style="color: white; margin: 50px 0 20px 0;">Consultas</h1>
+                    <div style="border: solid 1px #FFF; padding: 20px; border-radius: 20px;">
+                        <img src="img/pesquisaDocumentos.png" alt="Pesquisa de Processos" style="margin: 0 0 20px 0; width: 100%;">
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div class="col-md-4">
+                                <label for="validationCustom01" class="form-label" style="color: #FFF; font-weight: bold;">Origem</label>
+                                <input type="text" class="form-control" id="validationCustom01" value="" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="validationCustom02" class="form-label" style="color: #FFF; font-weight: bold;">Ano</label>
+                                <input type="text" class="form-control" id="validationCustom02" value="" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="validationCustomUsername" class="form-label" style="color: #FFF; font-weight: bold;">Número</label>
+                                <div class="input-group has-validation">
+                                    <input type="text" class="form-control" id="validationCustomUsername"
+                                        aria-describedby="inputGroupPrepend" required>
+                                    <div class="invalid-feedback">
+                                        Please choose a username.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3" style="margin: 20px 0 30px 0;">
+                                <label for="validationCustom04" class="form-label" style="color: #FFF; font-weight: bold;">Tipo</label>
+                                <select class="form-select" id="validationCustom04" required>
+                                    <option selected disabled value="">Selecione</option>
+                                    <option>...</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a valid state.
+                                </div>
+                            </div>
+                            <div class="col-12" style="text-align: right;">
+                                <button class="btn btn-light" type="submit">Buscar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <img src="img/consultaDam.png" alt="Pesquisa de Processos" style="margin: 20px 0 20px 0;">
+                    <a href="https://servicos.sedur.salvador.ba.gov.br/servicosonline/Web/emissaodam.php?idCategoria=352" style="text-decoration: none; color: orange;">
+                        <li type="none">Autorização Especial para Logradouros Públicos</li>
+                    </a>
+                    <a href="https://servicos.sedur.salvador.ba.gov.br/servicosonline/Web/emissaodam.php?idCategoria=353" style="text-decoration: none; color: orange;">
+                        <li type="none">Autorização Especial para Eventos Esportivos</li>
+                    </a>
+                    <a href="https://servicos.sedur.salvador.ba.gov.br/servicosonline/Web/emissaodam.php?idCategoria=354" style="text-decoration: none; color: orange;">
+                        <li type="none">Autorização Especial para Feiras e Congressos</li>
+                    </a>
+                    <a href="https://servicos.sedur.salvador.ba.gov.br/servicosonline/Web/emissaodam.php?idCategoria=355" style="text-decoration: none; color: orange;">
+                        <li type="none">Autorização Especial para Shows / Espetáculos Artísticos / Eventos Culturais</li>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <img src="img/regulacao.png" alt="Imagem Regulação" style="width: 190px; margin: 30px 0 20px 0">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12"
+                    style="overflow-y:scroll; max-height: 300px; background-color: white; box-shadow: 10px black;">
+                    <p style="color: black; text-align: justify;">
+                        <br>LEIS<br>
+                    <ul>
+                        <a href="http://sedur.salvador.ba.gov.br/arquivos/2014/11/lei_7186_2006.pdf" target="_blank" rel="noopener noreferrer external">
+                            <li>Lei nº 7.186 de 27 de dezembro de 2006 - Código Tributário e de Rendas do Município do
+                                Salvador.</li>
+                        </a>
+                    </ul>
+                    <br>DECRETOS<br>
+                    <ul>
+                        <a href="http://sedur.salvador.ba.gov.br/arquivos/2014/11/decreto_CLE.pdf" target="_blank" rel="noopener noreferrer external">
+                            <li>Decreto de 11 de julho de 2014 – Designa a Composição dos representantes da CLE.</li>
+                        </a>
+                        <a href="http://sedur.salvador.ba.gov.br/arquivos/2014/11/20505_2009.pdf" target="_blank" rel="noopener noreferrer external">
+                            <li>
+                                Decreto Municipal nº 20.505 de 28 de dezembro de 2009 – Disciplina o licenciamento e
+                                fiscalização de
+                                Eventos.
+                            </li>
+                        </a>
+                        <a href="#0" target="_blank" rel="noopener noreferrer external">
+                            <li>Decreto Nº 24.808 de 24 de fevereiro de 2014 – Estabelece critérios para cobrança do
+                                ISS.</li>
+                        </a>
+                        <a href="http://sedur.salvador.ba.gov.br/arquivos/2015/05/Decreto-26.021_2015.pdf" target="_blank" rel="noopener noreferrer external">
+                            <li>Decreto n° 26.021 de 11 de maio de 2015 – Cria a Central Integrada de Licenciamento de
+                                Eventos.</li>
+                        </a>
+                        <a
+                            href="https://leismunicipais.com.br/a1/ba/s/salvador/decreto/2017/2846/28464/decreto-n-28464-2017-altera-e-acrescenta-dispositivos-ao-decreto-n-26021-de-08-de-maio-de-2015-que-dispoe-sobre-o-licenciamento-de-eventos-realizados-no-municipio-de-salvador-cria-a-central-integrada-de-licenciamento-de-eventos-e-da-outras-providencias" target="_blank" rel="noopener noreferrer external">
+                            <li>
+                                Decreto Nº 28.464 de 15 de maio de 2017 - A Secretaria Municipal de Trabalho, Esporte e
+                                Lazer -
+                                SEMTEL prestará o apoio administrativo necessário ao funcionamento da CLE.
+                            </li>
+                        </a>
+                        <a href="https://www.sefaz.salvador.ba.gov.br/Documento/ObterArquivo/1554" target="_blank" rel="noopener noreferrer external">
+                            <li>
+                                Decreto Nº 29.452 de 24 de janeiro de 2018, Regulamenta a emissão do Cupom Fiscal de
+                                Eventos -
+                                Bilhete/Ingresso Eletrônico - BE, estabelece critérios para sua utilização, e dá outras
+                                providências.
+                            </li>
+                        </a>
+                        <a href="https://www.sefaz.salvador.ba.gov.br/Documento/ObterArquivo/1629" target="_blank" rel="noopener noreferrer external">
+                            <li>
+                                Decreto Nº 30.361 de 19 de outubro de 2018, Altera e acrescenta dispositivos do Decreto
+                                nº 29.452,
+                                de 24 de janeiro de 2018, que regulamenta a emissão do Cupom Fiscal de Eventos -
+                                Bilhete/Ingresso
+                                Eletrônico - BE, estabelece critérios para sua utilização, na forma que indica.
+                            </li>
+                        </a>
+                        <a href="http://sedur.salvador.ba.gov.br/arquivos/2021/02/dec_33479_2021.pdf" target="_blank" rel="noopener noreferrer external">
+                            <li>
+                                Decreto nº 33.479/2021 – Altera dispositivos do Decreto nº 26.021, de 08 de maio de
+                                2015, que
+                                “Dispõe sobre o licenciamento de eventos realizados no Município de Salvador, cria a
+                                Central
+                                Integrada de Licenciamento de Eventos e dá outras providências.
+                            </li>
+                        </a>
+                    </ul>
+                    <br>PORTARIAS<br>
+                    <ul>
+                        <a href="https://www.sefaz.salvador.ba.gov.br/Documento/ObterArquivo/613" target="_blank" rel="noopener noreferrer external">
+                            <li>
+                                Portaria nº 135/2002 de 03/01/2003 – Regulamenta o regime de estimativa para as atividades
+                                indicadas.
+                            </li>
+                        </a>
+                    </ul>
+                    <br>INSTRUÇÕES NORMATIVAS<br>
+                    Instrução Normativa SEFAZ/DRM Nº08/2018 - Dispõe sobre o cronograma e os procedimentos para a
+                    emissão do Cupom Fiscal de Eventos –Bilhete/Ingresso Eletrônico –BE, e dá outras providências.
+                    Instrução Normativa SEFAZ/DRM Nº13/2018 - Prorroga o prazo da obrigatoriedade de emissão de
+                    Bilhetes/Ingresso Eletrônico –BE, de que trata a Instrução Normativa SEFAZ/DRM nº 08/2018 BE, na
+                    forma que indica.
+                    Instrução Normativa SEFAZ/DRM Nº20/2018 - Altera dispositivos da Instrução Normativa SEFAZ/DRM nº
+                    8/2018, que dispõe sobre os procedimentos para a emissão do Cupom Fiscal de Eventos
+                    -Bilhete/Ingresso Eletrônico -BE, na forma que indica.
+                    Instrução Normativa SEFAZ/DRM Nº23/2018 - Altera, acrescenta e revoga dispositivos a Instrução
+                    Normativa SEFAZ/DRM nº 8/2018, que dispõe sobre os procedimentos para a emissão do Cupom Fiscal de
+                    Eventos -Bilhete/Ingresso Eletrônico -BE, na forma que indica.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Página "Como Licenciar"-->
+    <div class="container-fluid" style="min-height: 400px; background-color: #005ca8; padding-bottom: 30px;"
+        id="licenciar">
+        <div class="container">
+            <img src="img/comoLicenciar.png" alt="" style="width: 360px; margin-top: 60px;">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <h1 style="color: white; margin-top: 50px;">Como funciona o licenciamento?</h1>
+                    <p style="color: white; margin-top: 20px; margin-bottom: 20px; text-align: justify;">
+                        O licenciamento ocorre por meio de Abertura de Processo de forma presencial
+                        na SEDE da CLE. O
+                        Requerente deverá verificar o tipo de evento e apresentar a documentação exigida para
+                        deliberação
+                        dos Órgãos que compõe a CLE. É necessário dar entrada no processo no mínimo 15 dias antes do
+                        evento.
+                        Os processos que derem entrada fora do prazo poderão ser indeferidos por intempestividade.
+                        <br>
+                        Alguns eventos serão analisados de acordo com o local, cada órgão ficará responsável sobre as
+                        taxas
+                        de acordo à sua competência. O valor do licenciamento varia de acordo com o tipo de evento.
+
+                        O pagamento deverá ser efetuado com antecedência mínima de 02 dias úteis antes do evento pois o
+                        sistema demora 24 horas para reconhecer o pagamento.
+                        <br>
+                        Caso seja necessário alterar a data ou local do evento, é preciso entregar solicitação por
+                        escrito
+                        na CLE antes da data do evento solicitada inicialmente.
+
+                        Com o evento licenciado, o alvará deverá ser impresso através do site da CLE através do Acesso
+                        Restrito.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12" style="text-align:center; margin-bottom: 20px;">
+                    <a href="http://cle.salvador.ba.gov.br/taxasCLE2017_doc.pdf" target="_blank"
+                        rel="noopener noreferrer"><img src="img/tabelaDeTaxas.png" alt="Tabela de Taxas CLE"
+                            style="position: relative; z-index: 1; top: 220px"></a>
+                    <img src="img/moldura.png" alt="" style="position: relative; z-index: 0;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Página "Documentação"-->
+    <div class="backgroundDocumentos">
+        <div style="min-height: 820px;" id="tituloDocumentacao">
+            <div class="container">
+                <img src="img/documentacao.png" alt="docImg" style="width: 370px; margin-top: 100px;">
+                <h1 style="color: #005ca8;"></h1>
+                <h3 style="color: #005ca8;"></h3>
+            </div>
+            <div id="carouselExampleControls" class="carousel slide container" data-bs-ride="carousel">
+                <div class="carousel-inner"
+                    style="border: solid 1px rgba(0, 123, 255, 0.384); margin: 100px 20px 50px 0px; padding-bottom: 30px; border-radius: 20px; padding: 8px;">
+                    <!--Primeiro Item do Carousel-->
+                    <div class="carousel-item active">
+                        <div class="container" style="margin-top: 40px;" id="abas">
+                            <h3 style="margin-bottom: 20px; color: #005ca8;">Autorização Especial para Eventos em
+                                Logradouros
+                                Públicos</h3>
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link navigation" style="color: white; background-color: #007bffff;"
+                                        href="#0" id="linkDe">Descrição</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link navigation" style="color: gray;" href="#0"
+                                        id="linkDoEx">Documentação
+                                        Exigida</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link navigation" style="color: gray;" href="#0" id="linkTa">Taxas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link navigation" style="color: gray;" href="#0"
+                                        id="linkIn">Informações</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <article class="container"
+                            style="margin-top: 20px; text-align: justify;border: solid 1px rgba(0, 123, 255, 0.384); border-radius: 10px; padding: 10px;"
+                            id="descricaoLopu">
+                            Licença para realização de eventos realizados em área pública como Ruas, Praças, Área verde,
+                            pontos
+                            turísticos
+                            com ou
+                            sem estrutura.
+                        </article>
+                        <article class="container"
+                            style="display: none; margin-top: 20px; border: solid 1px rgba(0, 123, 255, 0.384); border-radius: 10px; padding: 10px;"
+                            id="documentacaoLopu">
+                            <a href="https://sedur.salvador.ba.gov.br/arquivos/pdf/CLE_DOCUMENTACAO_LOG_PUBLICO_LP001.pdf"
+                                style="text-decoration: none;">Clique aqui para visualizar a documentação exigida.</a>
+                        </article>
+                        <article class="container"
+                            style="display: none; margin-top: 20px; border: solid 1px rgba(0, 123, 255, 0.384); border-radius: 10px; padding: 10px;"
+                            id="taxasLopu">
+                            <table style="width: 100%;">
+                                <tr style="background-color: #0275d8;">
+                                    <td style="font-weight: bold; color: white;">Descrição</td>
+                                    <td
+                                        style="font-weight: bold; text-align: right; border-spacing: 20px; color: white;">
+                                        Valor
+                                        [R$]</td>
+                                </tr>
+                                <tr>
+                                    <td style="border-bottom: solid 1px gray;">Emissão de Alvará</td>
+                                    <td style="text-align: right; border-bottom: solid 1px gray;">34,74
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border-bottom: solid 1px gray;">Taxa de Expediente</td>
+                                    <td style="text-align: right; border-bottom: solid 1px gray;">18,00
+                                    </td>
+                                </tr>
+                                <p style="margin-top: 0px;">
+                                    Taxa Atualizada (Exercício 2021).
+                                </p>
+                            </table>
+                        </article>
+                        <article class="container"
+                            style="display: none; margin-top: 20px; text-align: justify; border: solid 1px rgba(0, 123, 255, 0.384); border-radius: 10px; padding: 10px;"
+                            id="infoLopu">
+                            Outros documentos e autorização ou anuência de Órgãos Federais poderão ser solicitados de
+                            acordo
+                            com a
+                            análise de
+                            cada caso e as características do evento a ser desenvolvido.
+                            Observando que a lotação máxima admitida deve obedecer rigorosamente as especificações
+                            contidas
+                            na <a href="#">IT 11/2016 do CBMBA</a>.
+                            O convite será exclusivamente atendido pelo responsável técnico do projeto em questão.
+                            O procurador poderá realizar o atendimento, caso possua formação técnica em engenharia civil
+                            e/ou
+                            arquitetura.
+                        </article>
+                    </div>
+                    <!--Segundo Item do Carousel-->
+                    <div class="carousel-item">
+                        <div class="container" style="margin-top: 40px;" id="lin">
+                            <h3 style="margin-bottom: 20px; color: #005ca8;">Autorização Especial para Eventos
+                                Esportivos</h3>
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link navigationTwo" style="color: white; background-color: #007bffff;"
+                                        href="#0" id="linkDe02">Descrição</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link navigationTwo" style="color: gray;" href="#0"
+                                        id="linkDoEx02">Documentação
+                                        Exigida</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link navigationTwo" style="color: gray;" href="#0"
+                                        id="linkTa02">Taxas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link navigationTwo" style="color: gray;" href="#0"
+                                        id="linkIn02">Informações</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link navigationTwo" style="color: gray;" href="#0" id="linkPaLo">Prazo
+                                        e
+                                        Locais
+                                        de
+                                        Atendimento</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <article class="container"
+                            style="margin-top: 20px; text-align: justify;border: solid 1px rgba(0, 123, 255, 0.384); border-radius: 10px; padding: 10px;"
+                            id="descricao02">
+                            Licença para realização de eventos esportivos em locais privados ou públicos.
+                        </article>
+                        <article class="container"
+                            style="display: none; margin-top: 20px; border: solid 1px rgba(0, 123, 255, 0.384); border-radius: 10px; padding: 10px;"
+                            id="documentacaoExigida02">
+                            <a href="http://sedur.salvador.ba.gov.br/arquivos/pdf/CLE_DOCUMENTACAO_ESPORTIVO_DE001.pdf"
+                                style="text-decoration: none;">Clique aqui para visualizar a documentação exigida.</a>
+                        </article>
+                        <article class="container"
+                            style="display: none; margin-top: 20px; border: solid 1px rgba(0, 123, 255, 0.384); border-radius: 10px; padding: 10px;"
+                            id="taxas02">
+                            <table style="width: 100%;">
+                                <tr style="background-color: #0275d8;">
+                                    <td style="font-weight: bold; color: white;">Descrição</td>
+                                    <td
+                                        style="font-weight: bold; text-align: right; border-spacing: 20px; color: white;">
+                                        Valor
+                                        [R$]</td>
+                                </tr>
+                                <tr>
+                                    <td style="border-bottom: solid 1px gray;">Autorização Especial</td>
+                                    <td style="text-align: right; border-bottom: solid 1px gray;">1.232,78
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border-bottom: solid 1px gray;">Emissão de Alvará</td>
+                                    <td style="text-align: right; border-bottom: solid 1px gray;">34,74
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border-bottom: solid 1px gray;">Taxa de Expediente</td>
+                                    <td style="text-align: right; border-bottom: solid 1px gray;">18,00
+                                    </td>
+                                </tr>
+                                <p style="margin-top: 0px;">
+                                    Taxa Atualizada (Exercício 2021).
+                                </p>
+                            </table>
+                        </article>
+                        <article class="container"
+                            style="display: none; margin-top: 20px; text-align: justify; border: solid 1px rgba(0, 123, 255, 0.384); border-radius: 10px; padding: 10px;"
+                            id="informacoes02">
+                            Outros documentos poderão ser solicitados de acordo com a análise de cada caso e as
+                            características
+                            do evento a ser desenvolvido.
+                            Evento Esportivo deverá atender o prazo e solicitações da Vigilância Sanitária.
+                            Havendo estrutura, deverá efetuar pagamento das Taxas da SEMOP.
+                            Eventos Esportivos em Logradouro Público deverá ser apresentado Autorização da Polícia
+                            Militar da
+                            Bahia, para garantia da Segurança do público.
+                            Observando que a lotação máxima admitida deve obedecer rigorosamente as especificações
+                            contidas na
+                            <a
+                                href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjs9suK-bDzAhXoqpUCHZBGAl8QFnoECAIQAQ&url=http%3A%2F%2Fsindbombeirosbahia.org.br%2Ffiles%2F22&usg=AOvVaw0bpOdb17wmeJsSZ3ddYmAG">IT
+                                11/2016 do CBMBA</a>.
+                        </article>
+                        <article class="container"
+                            style="display: none; margin-top: 20px; text-align: justify; border: solid 1px rgba(0, 123, 255, 0.384); border-radius: 10px; padding: 10px;"
+                            id="palo">
+                            O Prazo para abertura e analise é de 15 dias úteis. As diligências que dependerem do
+                            requerente
+                            interrompem quaisquer prazos.
+                            Endereço: Av. Antônio Carlos Magalhães, 3244. Caminho das Árvores, EDF. Thomé de Souza.
+                            Horário Atendimento: Segunda à sexta das 9:00 às 17:00 horas.
+                        </article>
+                    </div>
+                    <!--Terceiro Item do Carousel-->
+                    <div class="carousel-item">
+                        <div class="container" style="margin-top: 40px;" id="linkDe2">
+                            <h3 style="margin-bottom: 20px; color: #005ca8;">Autorização Especial para Feiras e
+                                Congressos</h3>
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link navigationThree"
+                                        style="color: white; background-color: #007bffff;" href="#0"
+                                        id="linkDe03">Descrição</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link navigationThree" style="color: gray;" href="#0"
+                                        id="linkDoEx03">Documentação
+                                        Exigida</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link navigationThree" style="color: gray;" href="#0"
+                                        id="linkTa03">Taxas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link navigationThree" style="color: gray;" href="#0"
+                                        id="linkIn03">Informações</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link navigationThree" style="color: gray;" href="#0"
+                                        id="linkPaLo02">Prazo e
+                                        Locais de
+                                        Atendimento</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <article class="container"
+                            style="margin-top: 20px; text-align: justify;border: solid 1px rgba(0, 123, 255, 0.384); border-radius: 10px; padding: 10px;"
+                            id="descricao03">
+                            Licença Especial para eventos esporádicos em ambientes fechados, em período e horário
+                            pré-determinado.
+                        </article>
+                        <article class="container"
+                            style="display: none; margin-top: 20px; border: solid 1px rgba(0, 123, 255, 0.384); border-radius: 10px; padding: 10px;"
+                            id="documentacaoExigida03">
+                            <a href="http://sedur.salvador.ba.gov.br/arquivos/pdf/CLE_DOCUMENTACAO_FEIRA_CONGRESSO_FC001.pdf"
+                                style="text-decoration: none;">Clique aqui para visualizar a documentação exigida.</a>
+                        </article>
+                        <article class="container"
+                            style="display: none; margin-top: 20px; border: solid 1px rgba(0, 123, 255, 0.384); border-radius: 10px; padding: 10px;"
+                            id="taxas03">
+                            <table style="width: 100%;">
+                                <tr style="background-color: #0275d8;">
+                                    <td style="font-weight: bold; color: white;">Descrição</td>
+                                    <td
+                                        style="font-weight: bold; text-align: right; border-spacing: 20px; color: white;">
+                                        Valor
+                                        [R$]</td>
+                                </tr>
+                                <tr>
+                                    <td style="border-bottom: solid 1px gray;">Autorização Especial</td>
+                                    <td style="text-align: right; border-bottom: solid 1px gray;">1.232,78
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border-bottom: solid 1px gray;">Emissão de Alvará</td>
+                                    <td style="text-align: right; border-bottom: solid 1px gray;">34,74
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border-bottom: solid 1px gray;">Taxa de Expediente</td>
+                                    <td style="text-align: right; border-bottom: solid 1px gray;">18,00
+                                    </td>
+                                </tr>
+                                <p style="margin-top: 0px;">
+                                    Taxa Atualizada (Exercício 2021).
+                                </p>
+                            </table>
+                        </article>
+                        <article class="container"
+                            style="display: none; margin-top: 20px; text-align: justify; border: solid 1px rgba(0, 123, 255, 0.384); border-radius: 10px; padding: 10px;"
+                            id="informacoes03">
+                            Outros documentos poderão ser solicitados de acordo com a análise de cada caso e as
+                            características
+                            do evento a ser desenvolvido.
+                            Quando houver Estrutura, o atendimento técnico será exclusivamente atendido pelo responsável
+                            do
+                            projeto em questão.
+                            Quando houver publicidade, deverá ser apresentado o Layout com as dimensões para cálculo.
+                            O procurador poderá realizar o atendimento, caso possua formação técnica em engenharia civil
+                            e/ou
+                            arquitetura.
+                            Deverá apresentar o Atestado de Vistoria do Corpo de Bombeiros atestando o Projeto de
+                            Segurança do
+                            Evento.
+                            Observando que a lotação máxima admitida deve obedecer rigorosamente as especificações
+                            contidas na
+                            <a
+                                href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjs9suK-bDzAhXoqpUCHZBGAl8QFnoECAIQAQ&url=http%3A%2F%2Fsindbombeirosbahia.org.br%2Ffiles%2F22&usg=AOvVaw0bpOdb17wmeJsSZ3ddYmAG">IT
+                                11/2016 do CBMBA</a>.
+                            O convite será exclusivamente atendido pelo responsável técnico do projeto em questão.
+                            O procurador poderá realizar o atendimento, caso possua formação técnica em engenharia civil
+                            e/ou
+                            arquitetura.
+                            As taxas da SEMOP só serão cobradas nos eventos realizados em logradouro público.
+                        </article>
+                        <article class="container"
+                            style="display: none; margin-top: 20px; text-align: justify; border: solid 1px rgba(0, 123, 255, 0.384); border-radius: 10px; padding: 10px;"
+                            id="palo02">
+                            O Prazo para abertura e analise é de 15 dias úteis. As diligências que dependerem do
+                            requerente
+                            interrompem quaisquer prazos.
+                            Endereço: Av. Antônio Carlos Magalhães, 3244. Caminho das Árvores, EDF. Thomé de Souza.
+                            Horário Atendimento: Segunda à sexta das 9:00 às 17:00 horas.
+                        </article>
+                    </div>
+                    <!--Quarto Item do Carousel-->
+                    <div class="carousel-item">
+                        <div class="container" style="margin-top: 40px;" id="linkDe3">
+                            <h3 style="margin-bottom: 20px; color: #005ca8;">Autorização especial para shows,
+                                espetáculos
+                                artísticos e eventos culturais</h3>
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link navigationFour"
+                                        style="color: white; background-color: #007bffff;" href="#0"
+                                        id="linkDe04">Descrição</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link navigationFour" style="color: gray;" href="#0"
+                                        id="linkDoEx04">Documentação
+                                        Exigida</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link navigationFour" style="color: gray;" href="#0"
+                                        id="linkTa04">Taxas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link navigationFour" style="color: gray;" href="#0"
+                                        id="linkIn04">Informações</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link navigationFour" style="color: gray;" href="#0"
+                                        id="linkOb">Observações</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link navigationFour" style="color: gray;" href="#0"
+                                        id="linkPaLo03">Prazo e
+                                        Locais de
+                                        Atendimento</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <article class="container"
+                            style="margin-top: 20px; text-align: justify;border: solid 1px rgba(0, 123, 255, 0.384); border-radius: 10px; padding: 10px;"
+                            id="descricao04">
+                            Autorização para shows, espetáculos artísticos, eventos culturais, espetáculos programados
+                            em
+                            imóveis de propriedade privada (Execução/Instalação de Estruturas Moldadas).
+                        </article>
+                        <article class="container"
+                            style="display: none; margin-top: 20px; border: solid 1px rgba(0, 123, 255, 0.384); border-radius: 10px; padding: 10px;"
+                            id="documentacaoExigida04">
+                            <a href="http://sedur.salvador.ba.gov.br/arquivos/pdf/CLE_DOCUMENTACAO_SHOW_SH001.pdf"
+                                style="text-decoration: none;">Clique aqui para visualizar a documentação exigida.</a>
+                        </article>
+                        <article class="container"
+                            style="display: none; margin-top: 20px; border: solid 1px rgba(0, 123, 255, 0.384); border-radius: 10px; padding: 10px;"
+                            id="taxas04">
+                            <table style="width: 100%;">
+                                <tr style="background-color: #0275d8;">
+                                    <td style="font-weight: bold; color: white;">Descrição</td>
+                                    <td
+                                        style="font-weight: bold; text-align: right; border-spacing: 20px; color: white;">
+                                        Valor
+                                        [R$]</td>
+                                </tr>
+                                <tr>
+                                    <td style="border-bottom: solid 1px gray;">Autorização Especial</td>
+                                    <td style="text-align: right; border-bottom: solid 1px gray;">1.232,78
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border-bottom: solid 1px gray;">Emissão de Alvará</td>
+                                    <td style="text-align: right; border-bottom: solid 1px gray;">34,74
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border-bottom: solid 1px gray;">Taxa de Expediente</td>
+                                    <td style="text-align: right; border-bottom: solid 1px gray;">18,00
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border-bottom: solid 1px gray;">Taxa de Utilização Sonora (até 100
+                                        pessoas)</td>
+                                    <td style="text-align: right; border-bottom: solid 1px gray;">106,19
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border-bottom: solid 1px gray;">Taxa de Utilização Sonora (de 101 a 300
+                                        pessoas)
+                                    </td>
+                                    <td style="text-align: right; border-bottom: solid 1px gray;">212,36
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border-bottom: solid 1px gray;">Taxa de Utilização Sonora (de 301 a 500
+                                        pessoas)
+                                    </td>
+                                    <td style="text-align: right; border-bottom: solid 1px gray;">422,93
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border-bottom: solid 1px gray;">Taxa de Utilização Sonora (de 501 a 1000
+                                        pessoas)
+                                    </td>
+                                    <td style="text-align: right; border-bottom: solid 1px gray;">1.079,80
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border-bottom: solid 1px gray;">Taxa de Utilização Sonora (de 1001 a 3000
+                                        pessoas)</td>
+                                    <td style="text-align: right; border-bottom: solid 1px gray;">1.727,77
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border-bottom: solid 1px gray;">Taxa de Utilização Sonora (de 3001 a 6000
+                                        pessoas)</td>
+                                    <td style="text-align: right; border-bottom: solid 1px gray;">3.455,38
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border-bottom: solid 1px gray;">Taxa de Utilização Sonora (acima de 6000
+                                        pessoas)
+                                    </td>
+                                    <td style="text-align: right; border-bottom: solid 1px gray;">6.910,76
+                                    </td>
+                                </tr>
+                                <p>
+                                    Observando que a lotação máxima admitida é de rigorosamente 02 (duas) pessoas por m²
+                                    (metro
+                                    quadrado), de acordo com as especificações contidas na NBR – 9077 ABNT.
+                                </p>
+                                <p style="margin-top: 0px;">
+                                    Taxa Atualizada (Exercício 2021).
+                                </p>
+                            </table>
+                        </article>
+                        <article class="container"
+                            style="display: none; margin-top: 20px; text-align: justify; border: solid 1px rgba(0, 123, 255, 0.384); border-radius: 10px; padding: 10px;"
+                            id="informacoes04">
+                            Outros documentos poderão ser solicitados de acordo com a análise de cada caso e as
+                            características
+                            do evento a ser desenvolvido.
+                            O convite será exclusivamente atendido pelo responsável técnico do projeto em questão.
+                            Quando houver Estrutura, o atendimento técnico será exclusivamente atendido pelo responsável
+                            do
+                            projeto em questão.
+                            Quando houver publicidade, deverá ser apresentado o Layout com as dimensões para cálculo.
+                            O procurador poderá realizar o atendimento, caso possua formação técnica em engenharia civil
+                            e/ou
+                            arquitetura.
+                            Deverá apresentar o Atestado de Vistoria do Corpo de Bombeiros atestando o Projeto de
+                            Segurança do
+                            Evento.
+                            Observando que a lotação máxima admitida deve obedecer rigorosamente as especificações
+                            contidas na
+                            <a
+                                href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjs9suK-bDzAhXoqpUCHZBGAl8QFnoECAIQAQ&url=http%3A%2F%2Fsindbombeirosbahia.org.br%2Ffiles%2F22&usg=AOvVaw0bpOdb17wmeJsSZ3ddYmAG">IT
+                                11/2016 do CBMBA</a>.
+                            As taxas da SEMOP só serão cobradas nos eventos realizados em logradouro público.
+                            O convite será exclusivamente atendido pelo responsável técnico do projeto em questão.
+                            O procurador poderá realizar o atendimento, caso possua formação técnica em engenharia civil
+                            e/ou
+                            arquitetura.
+                            As taxas da SEMOP só serão cobradas nos eventos realizados em logradouro público.
+                        </article>
+                        <article class="container"
+                            style="display: none; margin-top: 20px; text-align: justify; border: solid 1px rgba(0, 123, 255, 0.384); border-radius: 10px; padding: 10px;"
+                            id="obs">
+                            As taxas da SEMOP só serão cobradas nos eventos realizados em logradouro público.
+                            O pagamento das taxas referentes ao licenciamento deverá ocorrer 24 horas úteis antes do
+                            evento.
+                        </article>
+                        <article class="container"
+                            style="display: none; margin-top: 20px; text-align: justify; border: solid 1px rgba(0, 123, 255, 0.384); border-radius: 10px; padding: 10px;"
+                            id="palo03">
+                            O Prazo para abertura e analise é de 15 dias úteis. As diligências que dependerem do
+                            requerente
+                            interrompem quaisquer prazos.
+                            Endereço: Av. Antônio Carlos Magalhães, 3244. Caminho das Árvores, EDF. Thomé de Souza.
+                            Horário Atendimento: Segunda à sexta das 9:00 às 17:00 horas.
+                        </article>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" role="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev" style="filter: invert(100%); width: 30px;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" role="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next" style="filter: invert(100%); width: 30px;">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+        </div>
+        <!--Button Serviços Sedur-->
+        <div style="text-align: center;">
+            <p style="color: #005ca8; font-size: 14pt;">
+                Mais Documentos Úteis
+            </p>
+            <a href="https://servicos.sedur.salvador.ba.gov.br/#/portal/home" target="_blank"
+                rel="noopener noreferrer external"><button type="button" class="btn btn-primary btn-lg"> <img
+                        src="img/pms.png" alt="PMS" style="margin-right: 10px;">Portal de Serviços Sedur</button></a>
+        </div>
+    </div>
+    <!--Página de "Contatos"-->
+    <div style="margin-top: 0px;" id="contatos">
+        <div class="container" style="margin-bottom: 50px;">
+            <img src="img/contatos.png" alt="docImg" style="width: 210px; margin-top: 100px;">
+            <h1 class="tituloBungee"></h1>
+            <h2 style="color: #231f20ff;"></h2>
+        </div>
+        <div class="container" style="margin-top: 50px; text-align: center;">
+            <!--Primeira row-->
+            <div class="row" style="margin: auto;">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card" style="width: 18rem; margin: auto;">
+                        <div style="text-align: center; margin-top: 20px;"><img src="img/sedur.png" class="card-img-top"
+                                alt="Sedur" style="width: 100px;"></div>
+                        <div class="card-body">
+                            <p class="card-text" style="margin-bottom: 5px; font-size: 16pt;">Rosana Sampaio</p>
+                            <hr>
+                            <div
+                                style="text-align: center; border: solid 1px rgba(128, 128, 128, 0.315); border-radius: 5px; padding: 10px; margin-bottom: 15px;">
+                                <img src="img/telefone.png" alt="E-mail" style="width: 20px; margin-right: 5px;">
+                                <p style="color: #231f20ff; font-weight: bold; margin-bottom: 4px">3202-9461</p>
+                            </div>
+                            <div
+                                style="text-align: center; border: solid 1px rgba(128, 128, 128, 0.315); border-radius: 5px; padding: 10px; margin-bottom: 15px;">
+                                <img src="img/email.png" alt="E-mail" style="width: 20px; margin-right: 5px;">
+                                <p style="color: #231f20ff; font-weight: bold; font-size: 12pt;">
+                                    rosanasampaio@salvador.ba.gov.br</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card" style="width: 18rem; margin: auto;">
+                        <div style="text-align: center; margin-top: 20px;"><img src="img/sefaz.png" class="card-img-top"
+                                alt="Sefaz" style="width: 100px;"></div>
+                        <div class="card-body">
+                            <p class="card-text" style="margin-bottom: 0px; font-size: 16pt;">Antônio Fernando</p>
+                            <hr>
+                            <div
+                                style="text-align: center; border: solid 1px rgba(128, 128, 128, 0.315); border-radius: 5px; padding: 10px; margin-bottom: 15px;">
+                                <img src="img/telefone.png" alt="E-mail" style="width: 20px; margin-right: 5px;">
+                                <p style="color: #231f20ff; font-weight: bold; margin-bottom: 4px">3202-8297</p>
+                            </div>
+                            <div
+                                style="text-align: center; border: solid 1px rgba(128, 128, 128, 0.315); border-radius: 5px; padding: 10px; margin-bottom: 15px;">
+                                <img src="img/email.png" alt="E-mail" style="width: 20px; margin-right: 5px;">
+                                <p style="color: #231f20ff; font-weight: bold; font-size: 12pt;">
+                                    afcerqueira@sefaz.salvador.ba.gov.br</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card" style="width: 18rem; margin: auto;">
+                        <div style="text-align: center; margin-top: 20px;"><img src="img/semop.png" class="card-img-top"
+                                alt="Semop" style="width: 110px;"></div>
+                        <div class="card-body">
+                            <p class="card-text" style="margin-bottom: 0px; font-size: 16pt;">Waldenice Cavalcanti</p>
+                            <hr>
+                            <div
+                                style="text-align: center; border: solid 1px rgba(128, 128, 128, 0.315); border-radius: 5px; padding: 10px; margin-bottom: 15px;">
+                                <img src="img/telefone.png" alt="E-mail" style="width: 20px; margin-right: 5px;">
+                                <p style="color: #231f20ff; font-weight: bold; margin-bottom: 4px">3202-5002</p>
+                            </div>
+                            <div
+                                style="text-align: center; border: solid 1px rgba(128, 128, 128, 0.315); border-radius: 5px; padding: 10px; margin-bottom: 15px;">
+                                <img src="img/email.png" alt="E-mail" style="width: 20px; margin-right: 5px;">
+                                <p style="color: #231f20ff; font-weight: bold; font-size: 12pt;">
+                                    waldenice.cavalcanti@salvador.ba.gov.br</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Segunda row-->
+            <div class="row" style="margin: 20px auto 20px auto;">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card" style="width: 18rem; margin: auto;">
+                        <div style="text-align: center; margin-top: 20px;"><img src="img/limpurb.png"
+                                class="card-img-top" alt="Limpurb" style="width: 120px;"></div>
+                        <div class="card-body">
+                            <p class="card-text" style="margin-bottom: 5px; font-size: 16pt;">Rodrigo Getirana</p>
+                            <hr>
+                            <div
+                                style="text-align: center; border: solid 1px rgba(128, 128, 128, 0.315); border-radius: 5px; padding: 10px; margin-bottom: 15px;">
+                                <img src="img/telefone.png" alt="E-mail" style="width: 20px; margin-right: 5px;">
+                                <p style="color: #231f20ff; font-weight: bold; margin-bottom: 4px">3202-9519</p>
+                            </div>
+                            <div
+                                style="text-align: center; border: solid 1px rgba(128, 128, 128, 0.315); border-radius: 5px; padding: 10px; margin-bottom: 15px;">
+                                <img src="img/email.png" alt="E-mail" style="width: 20px; margin-right: 5px;">
+                                <p style="color: #231f20ff; font-weight: bold; font-size: 12pt;">
+                                    rodrigogetirana@salvador.ba.gov.br</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card" style="width: 18rem; margin: auto;">
+                        <div style="text-align: center; margin-top: 20px;"><img src="img/secis.png" class="card-img-top"
+                                alt="Secis" style="width: 100px;"></div>
+                        <div class="card-body">
+                            <p class="card-text" style="margin-bottom: 0px; font-size: 16pt;">Isaias Vasconcelos</p>
+                            <hr>
+                            <div
+                                style="text-align: center; border: solid 1px rgba(128, 128, 128, 0.315); border-radius: 5px; padding: 10px; margin-bottom: 15px;">
+                                <img src="img/telefone.png" alt="E-mail" style="width: 20px; margin-right: 5px;">
+                                <p style="color: #231f20ff; font-weight: bold; margin-bottom: 4px">3202-5640</p>
+                            </div>
+                            <div
+                                style="text-align: center; border: solid 1px rgba(128, 128, 128, 0.315); border-radius: 5px; padding: 10px; margin-bottom: 15px;">
+                                <img src="img/email.png" alt="E-mail" style="width: 20px; margin-right: 5px;">
+                                <p style="color: #231f20ff; font-weight: bold; font-size: 12pt;">
+                                    ivasconcelos@salvador.ba.gov.br</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card" style="width: 18rem; margin: auto;">
+                        <div style="text-align: center; margin-top: 20px;"><img src="img/visa.png" class="card-img-top"
+                                alt="Vigilância sanitária" style="width: 90px;"></div>
+                        <div class="card-body">
+                            <p class="card-text" style="margin-bottom: 0px; font-size: 16pt;">Jussara Bonfim</p>
+                            <hr>
+                            <div
+                                style="text-align: center; border: solid 1px rgba(128, 128, 128, 0.315); border-radius: 5px; padding: 10px; margin-bottom: 15px;">
+                                <img src="img/telefone.png" alt="E-mail" style="width: 20px; margin-right: 5px;">
+                                <p style="color: #231f20ff; font-weight: bold; margin-bottom: 4px">3202-1758</p>
+                            </div>
+                            <div
+                                style="text-align: center; border: solid 1px rgba(128, 128, 128, 0.315); border-radius: 5px; padding: 10px; margin-bottom: 15px;">
+                                <img src="img/email.png" alt="E-mail" style="width: 20px; margin-right: 5px;">
+                                <p style="color: #231f20ff; font-weight: bold; font-size: 12pt;">
+                                    jussarabonfim.saude@salvador.ba.gov.br</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Terceira row-->
+            <div class="row" style="margin: 20px auto 20px auto;">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card" style="width: 18rem; margin: auto;">
+                        <div style="text-align: center; margin-top: 20px;"><img src="img/saltur.png"
+                                class="card-img-top" alt="Saltur" style="width: 130px;"></div>
+                        <div class="card-body">
+                            <p class="card-text" style="margin-bottom: 5px; font-size: 16pt;">Merina Aragão</p>
+                            <hr>
+                            <div
+                                style="text-align: center; border: solid 1px rgba(128, 128, 128, 0.315); border-radius: 5px; padding: 10px; margin-bottom: 15px;">
+                                <img src="img/telefone.png" alt="E-mail" style="width: 20px; margin-right: 5px;">
+                                <p style="color: #231f20ff; font-weight: bold; margin-bottom: 4px">3202-7682</p>
+                            </div>
+                            <div
+                                style="text-align: center; border: solid 1px rgba(128, 128, 128, 0.315); border-radius: 5px; padding: 10px; margin-bottom: 15px;">
+                                <img src="img/email.png" alt="E-mail" style="width: 20px; margin-right: 5px;">
+                                <p style="color: #231f20ff; font-weight: bold; font-size: 12pt;">
+                                    merina@salvador.ba.gov.br</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card" style="width: 18rem; margin: auto;">
+                        <div style="text-align: center; margin-top: 20px;"><img src="img/fgm.png" class="card-img-top"
+                                alt="Fundação Gregório de Matos" style="width: 70px;"></div>
+                        <div class="card-body">
+                            <p class="card-text" style="margin-bottom: 0px; font-size: 16pt;">Sidnei Silva</p>
+                            <hr>
+                            <div
+                                style="text-align: center; border: solid 1px rgba(128, 128, 128, 0.315); border-radius: 5px; padding: 10px; margin-bottom: 15px;">
+                                <img src="img/telefone.png" alt="E-mail" style="width: 20px; margin-right: 5px;">
+                                <p style="color: #231f20ff; font-weight: bold; margin-bottom: 4px">3202-7829</p>
+                            </div>
+                            <div
+                                style="text-align: center; border: solid 1px rgba(128, 128, 128, 0.315); border-radius: 5px; padding: 10px; margin-bottom: 15px;">
+                                <img src="img/email.png" alt="E-mail" style="width: 20px; margin-right: 5px;">
+                                <p style="color: #231f20ff; font-weight: bold; font-size: 12pt;">
+                                    sidnei.silva@salvador.ba.gov.br</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card" style="width: 18rem; margin: auto;">
+                        <div style="text-align: center; margin-top: 20px;"><img src="img/transalvador.png"
+                                class="card-img-top" alt="Semop" style="width: 220px;"></div>
+                        <div class="card-body">
+                            <p class="card-text" style="margin-bottom: 0px; font-size: 16pt;">Gilson Augusto</p>
+                            <hr>
+                            <div
+                                style="text-align: center; border: solid 1px rgba(128, 128, 128, 0.315); border-radius: 5px; padding: 10px; margin-bottom: 15px;">
+                                <img src="img/telefone.png" alt="E-mail" style="width: 20px; margin-right: 5px;">
+                                <p style="color: #231f20ff; font-weight: bold; margin-bottom: 4px">3202-8572</p>
+                            </div>
+                            <div
+                                style="text-align: center; border: solid 1px rgba(128, 128, 128, 0.315); border-radius: 5px; padding: 10px; margin-bottom: 15px;">
+                                <img src="img/email.png" alt="E-mail" style="width: 20px; margin-right: 5px;">
+                                <p style="color: #231f20ff; font-weight: bold; font-size: 12pt;">
+                                    seope.transalvador@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <div class="container-fluid" style="background-color: #005ca8; text-align: center; ">
+        <img src="img/sedurFooter.png" alt="Logo Sedur no rodapé" style="margin-top: 20px; width: 120px;">
+        <h6 style="color: white; margin-top: 20px;">
+            &copy; 2022 Secretaria Municipal de Desenvolvimento Urbano. Todos os
+            direitos reservados.
+        </h6>
+        <hr style="border-color: white;">
+        <div class="container" style="position: relative; bottom: 0px;  padding-bottom: 20px;">
+            <!--<img src="img/googleMaps.png" alt="" style="width: 100px;">-->
+            <p style="color: white; font-size: 10pt;">
+                Av. ACM, nº3224, Caminho das Árvores - SSA/Ba. Edf. Empres. Thomé de Souza/Térreo, CEP.: 41110-700 - SEG
+                à SEX das 9h às 17h
+            </p>
+        </div>
+    </div>
+    <!--Botão Whatsapp-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://wa.me/5575992312449?text=Olá!%20Necessito%20de%20outras%20informações."
+        style="position:fixed;width:60px;height:60px;bottom:240px;right:20px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888; z-index:1000;"
+        target="_blank">
+        <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+    </a>
+    <!--Script-->
+    <script src="documentacaoScript.js" charset="utf-8"></script>
+    <script src="navScript.js"></script>
+    <script src="scriptAviso"></script>
+    <!--Script Bootstrap e Jquery-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</body>
+
+</html>
